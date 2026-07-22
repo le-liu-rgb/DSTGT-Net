@@ -1,0 +1,36 @@
+# Core
+torch>=1.9.0
+torchvision>=0.10.0
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+
+# Geospatial & mapping
+cartopy>=0.20.0
+shapely>=1.8.0  # required by cartopy
+pyproj>=3.0.0   # required by cartopy
+
+# Graph neural networks (for STGC_block)
+torch-geometric>=2.0.0
+# Optional: if torch-geometric installation fails, uncomment the following lines
+# to install via pre-built wheels (adjust CUDA version as needed)
+# --find-links https://data.pyg.org/whl/torch-1.12.0+cu113.html
+# torch-scatter>=2.1.0
+# torch-sparse>=0.6.15
+# torch-cluster>=1.6.0
+# torch-spline-conv>=1.2.1
+
+# Progress bars and utilities
+tqdm>=4.62.0
+tensorboard>=2.8.0  # optional, for logging
+
+# Other common libraries
+scikit-learn>=1.0.0  # may be used for evaluation
+scipy>=1.7.0
+pillow>=8.3.0
+
+# For TimeBridge (if used)
+# No extra packages beyond torch and numpy
+
+# For GeoTrackNet (if using TensorFlow version separately, not required for PyTorch port)
+# For our PyTorch re-implementation, no TensorFlow needed.
