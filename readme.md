@@ -225,8 +225,8 @@ If you use DSTGT-Net in your research, please cite:
 
 ## Contact
 
-- **Liu Tingjun & Sun Jiahua** (maintainers)
-- Primary contact: sunjiahua@mails.gdut.edu.cn
+- **Li Jiawen & Sun Jiahua** (maintainers)
+- Primary contact: jiawen-li@gdou.edu.cn; sunjiahua@mails.gdut.edu.cn
 - For issues, please open a GitHub Issue.
 
 ---
