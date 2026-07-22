@@ -1,4 +1,4 @@
-# config/config_transformer.py
+# config/config_lstm_seq2seq.py
 import os
 import torch
 
@@ -27,12 +27,8 @@ class Config():
         lon_min = 10.3
         lon_max = 13
 
-    transformer_d_model = 256
-    transformer_nhead = 8
-    transformer_num_encoder_layers = 3
-    transformer_num_decoder_layers = 3
-    transformer_dim_feedforward = 512
-    transformer_dropout = 0.1
+    lstm_hidden_size = 128
+    lstm_num_layers = 2
 
     learning_rate = 1e-3
     betas = (0.9, 0.95)
@@ -43,9 +39,9 @@ class Config():
     final_tokens = 260e9
     num_workers = 4
 
-    filename = f"{dataset_name}_transformer" \
+    filename = f"{dataset_name}_lstm_seq2seq" \
                + f"-bs-{batch_size}" \
                + f"-seqlen-{init_seqlen}-{max_seqlen}" \
-               + f"-dmodel-{transformer_d_model}-nhead-{transformer_nhead}"
+               + f"-hidden-{lstm_hidden_size}-layers-{lstm_num_layers}"
     savedir = "./results/" + filename + "/"
     ckpt_path = os.path.join(savedir, "model.pt")
